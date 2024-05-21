@@ -1,0 +1,153 @@
+/* Author: Daniel Geary
+Date: 20/05/2024
+Version: Final Website
+*/
+
+/*GLOBAL SETTING
+----------------------------------------
+*/
+
+@import url('https://fonts.cdnfonts.com/css/luminari');
+
+body {
+	font-size: 16px;
+	font-family: luminari, sans-serif;
+	color: #FFFFFF;
+	margin: 0;
+	background-color: #000000;
+}
+
+/* Alter background to black and text colour to white - default website darkmode for easier reading */
+
+#wrapper {
+	position: relative;
+	max-width: 1200px; 
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 2.5em;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 1.6em;
+	font-weight: 700;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+a {
+	color: #225c71; /* dark teal */
+}
+
+a:visited {
+	color: #c62d03; /* burnt red */
+}
+
+
+
+/* HEADER
+----------------------------------------
+*/
+
+header {
+	background: #2f261d	url(images/header.png) no-repeat top center/cover;
+	height: 330px;
+	color: #ffffff;	
+}
+	
+header h1 {
+	visibility: hidden;
+}
+
+header img {
+	position: relative;
+	top: 10px; left: 10px;
+	z-index: 999;
+}
+
+/* NAVIGATION
+----------------------------------------
+*/
+
+nav {
+	position: absolute;
+	top: 245px; left: 147px;
+	width: 100%; /* = 1200px */
+	padding-top: 35px;
+}
+
+nav a {
+	color: #ffffff; /* white */
+	text-decoration: none;
+	padding: 10px 20px 15px 20px;
+}
+
+nav a:hover {
+	background-color: #800000;
+}
+
+nav a:visited {
+	color: #ffffff;
+}
+
+nav ul {
+	padding-left: 200px;
+	list-style: none;
+}
+
+nav li {
+	display: inline;
+}
+
+nav span {
+    padding: 10px 20px 15px 20px;
+	background-color: #356d81;
+    color: #ffffff;
+}
+
+
+/* CONTENT 1
+----------------------------------------
+*/
+#char-bios {
+    display: flex;
+    margin: 25px 0;
+    text-align: center;
+}
+
+#char-bios section {
+    padding: 0 20px;
+}
+
+/* MEDIA PLAYER
+----------------------------------------
+*/
+iframe {
+width:100%;
+max-width:525px;
+overflow:hidden;
+background:transparent;
+}
+/* While its probably (definitely) not wise to try and figure out how to import the style aspects of an Apple Music track embedding into the website at 2:15AM, that is exactly what I did. Nailed it. -->
+
+/* FOOTER
+----------------------------------------
+*/
+footer {
+	font-size: 0.8em;
+	}
+
+footer ul {
+	display: flex;
+	justify-content: center;
+	}
+
+footer li {
+	list-style: none;
+	padding-right: 20px;
+	}
+	
+/* This document validates as CSS level 3 + SVG as of 21/05 */
